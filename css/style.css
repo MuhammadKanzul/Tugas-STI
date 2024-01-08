@@ -135,24 +135,15 @@ body {
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-.hero .content .cta {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.4rem;
-  color: #fff;
-  background-color: var(--primary);
-  border-radius: 0.5rem;
-  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-}
-
 /* About Section */
 .about,
+.materi,
 .tugas {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
+.materi h2,
 .tugas h2 {
   text-align: center;
   font-size: 2.6rem;
@@ -160,6 +151,7 @@ body {
 }
 
 .about span,
+.materi h2 span,
 .tugas h2 span {
   color: var(--primary);
 }
@@ -168,17 +160,17 @@ body {
   display: flex;
 }
 
-.about .row .about-img {
-  flex: 1 1 45rem;
+.about .row .about-img . {
+  flex: 1 1 25rem;
 }
 
 .about .row .about-img img {
-  width: 100%;
+  border-radius: 35%;
+  width: 85%;
 }
 
 .about .row .content {
   flex: 1 1 35rem;
-  padding: 0 1rem;
 }
 
 .about .row .content h3 {
@@ -195,11 +187,14 @@ body {
 }
 
 /* Tugas Section */
+.materi h2,
+.contact h2,
 .tugas h2,
 .contact h2 {
   margin-bottom: 1.5rem;
 }
 
+.materi p,
 .tugas p {
   text-align: center;
   max-width: 30rem;
@@ -209,6 +204,7 @@ body {
   color: #fff;
 }
 
+.materi .row,
 .tugas .row {
   display: flex;
   flex-wrap: wrap;
@@ -216,20 +212,30 @@ body {
   justify-content: center;
 }
 
+.materi .row .materi-card,
 .tugas .row .tugas-card {
   text-align: center;
 }
 
+.materi .row .materi-card img,
 .tugas .row .tugas-card img {
+  margin-top: 1.5rem;
   border-radius: 50%;
   width: 50%;
 }
 
+.materi .row .materi-card .materi-card-title,
 .tugas .row .tugas-card .tugas-card-title {
+  font-size: medium;
   margin: 1rem auto 1rem;
   color: var(--primary);
 }
 
+.materi .row .materi-card .materi-card-second {
+  font-size: small;
+}
+
+.materi .row .materi-card h3,
 .tugas .row .tugas-card h3 {
   color: var(--primary);
 }
@@ -242,6 +248,18 @@ footer {
   margin-top: 2rem;
 }
 
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover {
+  color: var(--bg);
+}
 footer .links a:hover {
   color: var(--bg);
 }
@@ -340,5 +358,10 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .about .row .about-img img {
+    border-radius: 35%;
+    width: 100%;
   }
 }
