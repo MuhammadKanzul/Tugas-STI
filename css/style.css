@@ -137,12 +137,14 @@ body {
 
 /* About Section */
 .about,
+.kartu,
 .materi,
 .tugas {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
+.kartu h2,
 .materi h2,
 .tugas h2 {
   text-align: center;
@@ -151,6 +153,7 @@ body {
 }
 
 .about span,
+.kartu h2 span,
 .materi h2 span,
 .tugas h2 span {
   color: var(--primary);
@@ -166,7 +169,8 @@ body {
 
 .about .row .about-img img {
   border-radius: 35%;
-  width: 85%;
+  width: 275;
+  height: 225;
 }
 
 .about .row .content {
@@ -188,9 +192,8 @@ body {
 
 /* Tugas Section */
 .materi h2,
-.contact h2,
-.tugas h2,
-.contact h2 {
+.kartu h2,
+.tugas h2 {
   margin-bottom: 1.5rem;
 }
 
@@ -240,6 +243,21 @@ body {
   color: var(--primary);
 }
 
+/* Kartu Ujian Section */
+.kartu .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 500px;
+  height: 375px;
+  background-color: #222;
+}
+
+.kartu .row .kartu-card img {
+  width: 475px;
+  height: 350px;
+}
 /* Footer */
 footer {
   background-color: var(--primary);
@@ -348,20 +366,11 @@ footer .credit a {
   .about .row .content p {
     font-size: 1.6rem;
   }
-
-  .contact .row {
-    flex-wrap: wrap;
-  }
 }
 
 /* Mobile Phone */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
-  }
-
-  .about .row .about-img img {
-    border-radius: 35%;
-    width: 100%;
   }
 }
